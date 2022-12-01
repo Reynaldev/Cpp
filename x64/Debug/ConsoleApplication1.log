@@ -2,5 +2,4 @@
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(45,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(57,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(99,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(60): warning C4715: 'determinant': not all control paths return a value
   ConsoleApplication1.vcxproj -> C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

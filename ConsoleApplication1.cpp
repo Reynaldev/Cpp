@@ -119,6 +119,16 @@ void triangular(int n) {
     }
 }
 
+int e_triangular(int n) {
+    int x = n;
+
+    for (int i = 0; i < n; i++) {
+        x += i;
+    }
+
+    return x;
+}
+
 int main()
 {
     //Aritmatika();
@@ -150,7 +160,8 @@ int main()
     triangular(n);*/
     
     // Triangular elements
-
+    int n = 5;
+    std::cout << "Triangular elements: " << e_triangular(n);
 
     return 0;
 }
