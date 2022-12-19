@@ -129,6 +129,20 @@ int e_triangular(int n) {
     return x;
 }
 
+std::string palindrom(std::string text) {
+    std::string revText;
+
+    for (int i = text.size() - 1; i >= 0; i--) {
+        revText += text[i];
+    }
+
+    return revText;
+}
+
+std::string is_palindrom(std::string ftext, std::string ntext) {
+    return (ftext == ntext) ? "True" : "False";
+}
+
 int main()
 {
     //Aritmatika();
@@ -160,8 +174,16 @@ int main()
     triangular(n);*/
     
     // Triangular elements
-    int n = 5;
-    std::cout << "Triangular elements: " << e_triangular(n);
+    /*int n = 5;
+    std::cout << "Triangular elements: " << e_triangular(n);*/
+
+    // Palindrom
+    std::string text;
+    std::cout << "Text: "; std::cin >> text;
+
+    std::string revText = palindrom(text);
+    std::cout << "Result: " + revText + "\n";
+    std::cout << "Is Palindrom? " + is_palindrom(text, revText);
 
     return 0;
 }
