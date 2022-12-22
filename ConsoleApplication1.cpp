@@ -143,6 +143,33 @@ std::string is_palindrom(std::string ftext, std::string ntext) {
     return (ftext == ntext) ? "True" : "False";
 }
 
+// Negative decimal to binary
+void negative_to_binary(int val) {
+    std::vector<int> bit;
+
+    while (val > 0) {
+        int remain = val % 2;
+        bit.push_back(remain);
+        val /= 2;
+    }
+
+    while (bit.size() < 8) {
+        bit.push_back(0);
+    }
+
+    for (int i = 0; i < bit.size(); i++) {
+        (bit[i] == 1) ? bit[i] = 0 : bit[i] = 1;
+
+        if (bit[0] == 0) bit[0] = 1;
+    }
+
+    for (int i = bit.size() - 1; i >= 0; i--) {
+        std::cout << bit[i];
+    }
+
+    std::cout << std::endl;
+}
+
 int main()
 {
     //Aritmatika();
@@ -178,12 +205,19 @@ int main()
     std::cout << "Triangular elements: " << e_triangular(n);*/
 
     // Palindrom
-    std::string text;
+    /*std::string text;
     std::cout << "Text: "; std::cin >> text;
 
     std::string revText = palindrom(text);
     std::cout << "Result: " + revText + "\n";
-    std::cout << "Is Palindrom? " + is_palindrom(text, revText);
+    std::cout << "Is Palindrom? " + is_palindrom(text, revText);*/
+
+    // Negative number to binary
+    while (true) {
+        int input;
+        std::cout << "Input number: "; std::cin >> input;
+        negative_to_binary(input);
+    }
 
     return 0;
 }

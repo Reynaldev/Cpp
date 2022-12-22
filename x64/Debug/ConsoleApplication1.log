@@ -3,4 +3,5 @@ C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(57,25): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(99,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(135,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\ConsoleApplication1.cpp(166,5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   ConsoleApplication1.vcxproj -> C:\Users\Rey\Documents\My Coding\Cpp\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
