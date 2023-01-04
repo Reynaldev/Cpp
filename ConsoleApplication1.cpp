@@ -220,14 +220,16 @@ int main()
     }*/
 
     // Matrix
-    int m1[2][3] = { 
-        {5,2,3}, 
-        {1,7,1} 
+    const int x = 2, y = 3;
+
+    int m1[x][y] = { 
+        {5, 2, 3}, 
+        {1, 7, 1} 
     };
 
-    int m2[2][3] = { 
-        {1,1,2}, 
-        {0,1,4} 
+    int m2[x][y] = { 
+        {1, 1, 2}, 
+        {0, 1, 4} 
     };
 
     int m3[2][2];
@@ -237,25 +239,27 @@ int main()
     m3[1][0] = 15;
     m3[1][1] = 20;*/
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < x; i++) {
         int val = 0;
 
-        for (int j = 0; j < 3; j++) {
-            val += m1[i][j] * m2[i][j];
-
-            std::cout << val << " ";
+        for (int j = 0; j < y; j++) {
+            val += m1[i][j] * m2[0][j];
         }
+
+        m3[i][0] = val;
 
         val = 0;
 
-        for (int j = 0; j < 3; j++) {
-            val += 
+        for (int j = 0; j < y; j++) {
+            val += m1[i][j] * m2[1][j];
         }
+
+        m3[i][1] = val;
     }
 
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
-            //std::cout << m3[i][j] << " ";
+            std::cout << m3[i][j] << " ";
         }
 
         std::cout << std::endl;
