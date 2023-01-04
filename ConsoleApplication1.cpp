@@ -158,10 +158,10 @@ void negative_to_binary(int val) {
     }
 
     for (int i = 0; i < bit.size(); i++) {
-        (bit[i] == 1) ? bit[i] = 0 : bit[i] = 1;
-
-        if (bit[0] == 0) bit[0] = 1;
+        (bit[i] == 0) ? bit[i] = 1 : bit[i] = 0;
     }
+
+    bit[0] = 1;
 
     for (int i = bit.size() - 1; i >= 0; i--) {
         std::cout << bit[i];
@@ -213,10 +213,52 @@ int main()
     std::cout << "Is Palindrom? " + is_palindrom(text, revText);*/
 
     // Negative number to binary
-    while (true) {
+    /*while (true) {
         int input;
         std::cout << "Input number: "; std::cin >> input;
         negative_to_binary(input);
+    }*/
+
+    // Matrix
+    int m1[2][3] = { 
+        {5,2,3}, 
+        {1,7,1} 
+    };
+
+    int m2[2][3] = { 
+        {1,1,2}, 
+        {0,1,4} 
+    };
+
+    int m3[2][2];
+
+    /*m3[0][0] = 5;
+    m3[0][1] = 10;
+    m3[1][0] = 15;
+    m3[1][1] = 20;*/
+
+    for (int i = 0; i < 2; i++) {
+        int val = 0;
+
+        for (int j = 0; j < 3; j++) {
+            val += m1[i][j] * m2[i][j];
+
+            std::cout << val << " ";
+        }
+
+        val = 0;
+
+        for (int j = 0; j < 3; j++) {
+            val += 
+        }
+    }
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            //std::cout << m3[i][j] << " ";
+        }
+
+        std::cout << std::endl;
     }
 
     return 0;
